@@ -1,5 +1,5 @@
 {
-	"name": "async-context",
+	"name": "@esinx/async-context",
 	"version": "1.0.0",
 	"description": "A TypeScript library for async context management",
 	"main": "dist/index.js",

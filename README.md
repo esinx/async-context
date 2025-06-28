@@ -1,4 +1,4 @@
-# async-context
+# @esinx/async-context
 
 A TypeScript library for async context management, using React-like context API powered by Node.js AsyncLocalStorage.
 
