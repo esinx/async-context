@@ -1,0 +1,63 @@
+{
+	"name": "async-context",
+	"version": "1.0.0",
+	"description": "A TypeScript library for async context management",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+		"type-check": "tsc --noEmit",
+		"lint": "eslint src/**/*.ts",
+		"lint:fix": "eslint src/**/*.ts --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"format:fix": "prettier --write . && eslint src --ext .ts,.tsx --fix",
+		"test": "vitest",
+		"test:coverage": "vitest --coverage",
+		"test:ui": "vitest --ui",
+		"prepublishOnly": "pnpm run format:fix && pnpm run lint && pnpm run type-check && pnpm run test run && pnpm run build",
+		"clean": "rimraf dist"
+	},
+	"keywords": [
+		"async",
+		"context",
+		"typescript"
+	],
+	"author": "esinx",
+	"license": "MIT",
+	"packageManager": "pnpm@10.12.1",
+	"devDependencies": {
+		"@eslint/js": "^9.30.0",
+		"@types/node": "^20.19.1",
+		"@typescript-eslint/eslint-plugin": "^8.35.0",
+		"@typescript-eslint/parser": "^8.35.0",
+		"@vitest/coverage-v8": "^3.2.4",
+		"@vitest/ui": "^2.1.9",
+		"eslint": "^9.30.0",
+		"eslint-config-prettier": "^10.0.0",
+		"eslint-plugin-prettier": "^5.5.1",
+		"prettier": "^3.6.2",
+		"rimraf": "^5.0.0",
+		"tsup": "^8.0.0",
+		"typescript": "^5.0.0",
+		"vitest": "^2.1.9"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

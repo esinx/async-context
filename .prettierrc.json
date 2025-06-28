@@ -1,0 +1,23 @@
+{
+	"useTabs": true,
+	"tabWidth": 4,
+	"semi": false,
+	"singleQuote": true,
+	"quoteProps": "as-needed",
+	"trailingComma": "es5",
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"arrowParens": "avoid",
+	"endOfLine": "lf",
+	"printWidth": 80,
+	"proseWrap": "preserve",
+	"overrides": [
+		{
+			"files": "*.yml",
+			"options": {
+				"useTabs": false,
+				"tabWidth": 2
+			}
+		}
+	]
+}
