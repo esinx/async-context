@@ -60,13 +60,13 @@ jobs:
           release_name: Release ${{ steps.version.outputs.version }}
           body: |
             ## Changes in v${{ steps.version.outputs.version }}
-            
+
             See [CHANGELOG.md](CHANGELOG.md) for details.
-            
+
             ## Installation
-            
+
             ```bash
             npm install async-context@${{ steps.version.outputs.version }}
             ```
           draft: false
-          prerelease: false 
+          prerelease: false
