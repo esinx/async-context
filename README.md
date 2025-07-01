@@ -5,11 +5,11 @@ A TypeScript library for async context management, using React-like context API 
 ## Installation
 
 ```bash
-npm install async-context
+npm install @esinx/async-context
 # or
-yarn add async-context
+yarn add @esinx/async-context
 # or
-pnpm add async-context
+pnpm add @esinx/async-context
 ```
 
 ## What is Async Context?
